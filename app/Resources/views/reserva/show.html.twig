@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="row row-cards">
+        <div class="col-md-6 pading-1 col-md-offset-1">
+            <div class="card card-inverse card-info text-xs-center">
+                <h3 class="card-header">Sala<span class="pull-right glyphicon glyphicon-triangle-bottom invisible"></span>
+                    <div class="card-block">
+                        <blockquote class="card-blockquote">
+                            <p>
+                                Usuário:
+                                <span>{# reserva.usuario #}</span><br>
+                                Sala:
+                                <span>{# reserva.sala #}</span>
+                                <br>
+                                Data:
+                                <span>{# reserva.data_hora #}</span>
+                                <br>
+                                Hora:
+                                <span>{# reserva.hora #}</span>
+                                <br>
+                                Status:
+                                <span>{# reserva.status #}</span>
+                            </p>
+                            <a class="btn btn-sm btn-default pull-left" href="{# path('reserva_index') #}">Voltar para a lista</a>
+                            <a class="btn btn-sm btn-default pull-left" href="{# path('reserva_edit', { 'id': reserva.idReserva }) #}">Editar</a>
+                            {{ form_start(delete_form) }}
+                            <input type="submit" class="btn btn-sm btn-danger pull-right" value="Deletar">
+                            {{ form_end(delete_form) }}
+
+
+                        </blockquote>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

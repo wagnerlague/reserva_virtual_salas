@@ -1,0 +1,48 @@
+    {% extends 'base.html.twig' %}
+    {% block title %}Home{% endblock %}
+
+    {% block body %}
+        <div class="jumbotron bg-white pading-container">
+            <h2 class="titulo-pagina">Lista de Reservas</h2>
+            <div class="row">
+                <div class="col-xs-12 col-md-12 overflow">
+                    <table class="table table-striped table-hover">
+                        <thead class="thead-inverse">
+                        <tr>
+                            <th>#</th>
+                            <th>Usuário</th>
+                            <th class="text-center">Sala</th>
+                            <th class="text-center">Data</th>
+                            <th class="text-center">Hora</th>
+                            <th class="text-center">Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {%  for reserva in reservas %}
+                        <tr>
+                            <th scope="row"><a href="{{ path('reserva_show', { 'id': reserva.idReserva }) }}">{{ reserva.idReserva }}</a></th>
+                            <td>{# reserva.usuario #}</td>
+                            <td class="text-center pointer">{# reserva.sala #}</td>
+                            <td class="text-center pointer">{{ reserva.dataHora | date('d-m-Y') }}</td>
+                            <td class="text-center pointer">{{ reserva.hora }}</td>
+                            <td class="text-center pointer">{{ reserva.status }}</td>
+                        </tr>
+                        {%  endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12 overflow">
+                <ul>
+                    <li>
+                        <a href="{{ path('reserva_new') }}">Criar nova reserva</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    {% endblock %}
+    {% block javascripts %}{% endblock %}
+

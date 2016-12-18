@@ -1,0 +1,36 @@
+    {% extends 'base.html.twig' %}
+    {% block title %}Usu&aacute;rio{% endblock %}
+
+    {% block body %}
+
+        {{ form_start(form) }}
+        {{ form_errors(form) }}
+
+        <div>
+            {{ form_label(form.nome) }}
+            {{ form_errors(form.nome) }}
+            {{ form_widget(form.nome) }}
+        </div>
+
+        <div>
+            {{ form_label(form.usuario) }}
+            {{ form_errors(form.usuario) }}
+            {{ form_widget(form.usuario) }}
+        </div>
+
+        <div>
+            {{ form_label(form.senha) }}
+            {{ form_errors(form.senha) }}
+            {{ form_widget(form.senha) }}
+        </div>
+
+        <div>
+            {{ form_widget(form.save) }}
+        </div>
+
+        {{ form_end(form) }}
+
+
+    {% endblock %}
+    {% block javascripts %}{% endblock %}
+

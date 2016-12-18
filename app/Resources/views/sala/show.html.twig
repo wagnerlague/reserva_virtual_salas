@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="row row-cards">
+        <div class="col-md-6 pading-1 col-md-offset-1">
+            <div class="card card-inverse card-info text-xs-center">
+                <h3 class="card-header">Sala<span class="pull-right glyphicon glyphicon-triangle-bottom invisible"></span>
+                    <div class="card-block">
+                        <blockquote class="card-blockquote">
+                            <p>
+                                Identificacao:
+                                <span>{{ sala.identificacao }}</span><br>
+                                Capacidade:
+                                <span>{{ sala.capacidade }}</span>
+                                <br>
+                            </p>
+                            <a class="btn btn-sm btn-default pull-left" href="{{ path('sala_index') }}">Voltar para a lista</a>
+                            <a class="btn btn-sm btn-default pull-left" href="{{ path('sala_edit', { 'id': sala.idSala }) }}">Editar</a>
+                            {{ form_start(delete_form) }}
+                            <input type="submit" class="btn btn-sm btn-danger pull-right" value="Deletar">
+                            {{ form_end(delete_form) }}
+                        </blockquote>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

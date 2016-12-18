@@ -1,0 +1,44 @@
+{% extends 'base.login.html.twig' %}
+
+{% block body %}
+    <h1>Criar Usuário</h1>
+
+    {{ form_start(form) }}
+    {{ form_errors(form) }}
+
+    <div>
+        {{ form_label(form.idUsuario) }}
+        {{ form_errors(form.idUsuario) }}
+        {{ form_widget(form.idUsuario) }}
+    </div>
+
+    <div>
+        {{ form_label(form.nome) }}
+        {{ form_errors(form.nome) }}
+        {{ form_widget(form.nome) }}
+    </div>
+
+    <div>
+        {{ form_label(form.usuario) }}
+        {{ form_errors(form.usuario) }}
+        {{ form_widget(form.usuario) }}
+    </div>
+
+    <div>
+        {{ form_label(form.senha) }}
+        {{ form_errors(form.senha) }}
+        {{ form_widget(form.senha) }}
+    </div>
+
+    <div>
+        <input type="submit" value="Criar" />
+    </div>
+
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('login_index') }}">Voltar para o login</a>
+        </li>
+    </ul>
+{% endblock %}

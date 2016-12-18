@@ -1,0 +1,14 @@
+    {% extends 'base.html.twig' %}
+    {% block title %}Usu&aacute;rio{% endblock %}
+
+    {% block body %}
+
+        <ul>
+            {%  for usuario in usuarios %}
+                <li><a href="{{ usuario.idUsuario }}">{{ usuario.nome }}</li>
+            {%  endfor %}
+        </ul>
+
+    {% endblock %}
+    {% block javascripts %}{% endblock %}
+
