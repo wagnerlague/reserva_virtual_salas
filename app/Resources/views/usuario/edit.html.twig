@@ -1,21 +1,42 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Editar Usu&aacute;rio</h1>
-
+    <h2 class="titulo-pagina">Editar Usu&aacute;rio</h2>
     {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
-        <input type="submit" value="Editar" />
-    {{ form_end(edit_form) }}
-
-    <ul>
-        <li>
-            <a href="{{ path('usuario_index') }}">Voltar a lista</a>
-        </li>
-        <li>
+    <div class="row margin15">
+        <div class="col-xs-12 col-md-3">
+            <div class="form-group has-feedback">
+                <label class="control-label col-xs-3 col-md-8" for="nome">
+                    {{ form_label(edit_form.nome) }}
+                </label>
+                {{ form_widget(edit_form.nome, { 'attr': {'class': 'form-control'} }) }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <div class="form-group has-feedback">
+                <label class="control-label col-xs-3 col-md-8" for="usuario">
+                    {{ form_label(edit_form.usuario) }}
+                </label>
+                {{ form_widget(edit_form.usuario, { 'attr': {'class': 'form-control'} }) }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <div class="form-group has-feedback">
+                <label class="control-label col-xs-3 col-md-8" for="senha">
+                    {{ form_label(edit_form.senha) }}
+                </label>
+                {{ form_widget(edit_form.senha, { 'attr': {'class': 'form-control'} }) }}
+            </div>
+        </div>
+    </div>
+    <div class="row margin15">
+        <div class="col-xs-12 col-md-9">
+            <input type="submit" class="btn btn-primary pull-right" value="Editar" />
+            {{ form_end(edit_form) }}
+            <a class="btn btn-sm btn-default pull-left" href="{{ path('usuario_index') }}">Voltar para a lista</a>
             {{ form_start(delete_form) }}
-                <input type="submit" value="Deletar">
+            <input type="submit" class="btn btn-sm btn-danger pull-left" value="Deletar">
             {{ form_end(delete_form) }}
-        </li>
-    </ul>
+        </div>
+    </div>
 {% endblock %}

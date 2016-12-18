@@ -1,16 +1,36 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Criar Sala</h1>
 
-    {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Criar" />
-    {{ form_end(form) }}
-
-    <ul>
-        <li>
-            <a href="{{ path('sala_index') }}">Voltar a lista</a>
-        </li>
-    </ul>
+<h2 class="titulo-pagina">Criar Sala</h2>
+{{ form_start(form) }}
+<div class="row margin15">
+    <div class="col-xs-12 col-md-3">
+        <div class="form-group has-feedback">
+            <label class="control-label col-xs-3 col-md-8" for="identificacao">
+                {{ form_label(form.identificacao) }}
+            </label>
+                {{ form_widget(form.identificacao, { 'attr': {'class': 'form-control'} }) }}
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-3">
+        <div class="form-group has-feedback">
+            <label class="control-label col-xs-3 col-md-8" for="usuario">
+                {{ form_label(form.capacidade) }}
+            </label>
+            {{ form_widget(form.capacidade, { 'attr': {'class': 'form-control'} }) }}
+        </div>
+    </div>
+</div>
+<div class="row margin15">
+    <div class="col-xs-12 col-md-6">
+        <input type="submit" class="btn btn-primary pull-right" value="Criar" />
+        {{ form_end(form) }}
+        <ul>
+            <li>
+                <a href="{{ path('sala_index') }}">Voltar a lista</a>
+            </li>
+        </ul>
+    </div>
+</div>
 {% endblock %}

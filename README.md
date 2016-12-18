@@ -1,70 +1,45 @@
-Symfony Standard Edition
-========================
+Etapa 1
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
+Devido ao grande fluxo de funcionários de uma empresa, foi identificado a
+necessidade de um sistema de fila virtual para uso de salas de reuniões.
+Este sistema deve obedecer os seguintes requisitos:
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+● Possuir cadastro de usuários (crud)
 
-What's inside?
---------------
+● Possuir cadastro de salas (crud)
 
-The Symfony Standard Edition is configured with the following defaults:
+● Login de usuários
 
-  * An AppBundle you can use to start coding;
+● O sistema deve possuir uma interface em html.
 
-  * Twig as the only configured template engine;
+● Reserva de salas por usuários
 
-  * Doctrine ORM/DBAL;
+○ Após logado, usuário poderá efetuar reserva de salas.
 
-  * Swiftmailer;
+○ Deverá possuir uma visualização de todas as salas e os horários vagos e
+ocupados.
 
-  * Annotations enabled for everything.
+○ Um usuário não pode reservar mais de 1 sala no mesmo período
 
-It comes pre-configured with the following bundles:
+○ 1 sala não pode estar reservado por mais de 1 usuário no mesmo período,
+simultaneamente.
 
-  * **FrameworkBundle** - The core Symfony framework bundle
+○ As reservas de salas tem duração de 1 hora, ou seja, posso reservar a sala
+as 14:00, e ela estará “bloqueada” para reserva até o próximo horário 15:00.
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
+○ Deverá ser possível a remoção da reserva de uma sala apenas pelo próprio
+reservante.
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
+Etapa 2
 
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
+Desenvolva uma ​query que retorne os 10 funcionários que mais tempo permaneceram dentro
+de um determinado departamento e apresente o resultado da mesma ordenado por dias
+trabalhados em ordem decrescente.
 
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
+Na consulta deverá conter os seguintes campos:
 
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
+● Nome do departamento
 
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
+● Nome completo do funcionário
 
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
-
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
-
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
-
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
-
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
-
-Enjoy!
-
-[1]:  https://symfony.com/doc/3.2/setup.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/3.2/doctrine.html
-[8]:  https://symfony.com/doc/3.2/templating.html
-[9]:  https://symfony.com/doc/3.2/security.html
-[10]: https://symfony.com/doc/3.2/email.html
-[11]: https://symfony.com/doc/3.2/logging.html
-[12]: https://symfony.com/doc/3.2/assetic/asset_management.html
-[13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
-# reserva_virtual_salas
+● Dias trabalhados no departamento
