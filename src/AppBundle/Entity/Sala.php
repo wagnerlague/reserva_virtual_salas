@@ -2,6 +2,7 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -35,7 +36,40 @@ class Sala
      */
     private $capacidade;
 
+    /**
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Reserva", mappedBy="sala", indexBy="idSala")
+     * @var reservas[]
+     */
+    private $reservas;
 
+    /**
+     * Sala constructor.
+     * @param string $identificacao
+     * @param int $capacidade
+     */
+    public function __construct()
+    {
+        $this->reservas=new ArrayCollection();
+    }
+
+    public function addReserva(Reserva $reserva)
+    {
+        $this->reservas[$reserva->getIdReserva()] = $reserva;
+    }
+
+    public function getReserva($idReserva)
+    {
+        if (!isset($this->reservas[$idReserva])) {
+            throw new \InvalidArgumentException("Reserva não encontrada");
+        }
+
+        return $this->reservas[$idReserva];
+    }
+
+    public function getReservas()
+    {
+        return $this->reservas->toArray();
+    }
     /**
      * Set idSala
      *

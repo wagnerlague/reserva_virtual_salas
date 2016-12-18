@@ -21,29 +21,29 @@ class __TwigTemplate_55c5d206c095ff3f519f4206a91c8e4d7e89740ab4a823a6547498cf8f2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8e1e1bbffbcc0e054d1198e406e310db91c50d6dc0254d3cdecf517bab2e9f60 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_8e1e1bbffbcc0e054d1198e406e310db91c50d6dc0254d3cdecf517bab2e9f60->enter($__internal_8e1e1bbffbcc0e054d1198e406e310db91c50d6dc0254d3cdecf517bab2e9f60_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "usuario/new.html.twig"));
+        $__internal_47f02d9aa67222d422d6c57c37d59f1f8936866fed831ceee3418905ca230e2c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_47f02d9aa67222d422d6c57c37d59f1f8936866fed831ceee3418905ca230e2c->enter($__internal_47f02d9aa67222d422d6c57c37d59f1f8936866fed831ceee3418905ca230e2c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "usuario/new.html.twig"));
 
-        $__internal_971784cf6ca13be78e43a88caf33ac3703c9617bebb13fa89223903e71cd27d8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_971784cf6ca13be78e43a88caf33ac3703c9617bebb13fa89223903e71cd27d8->enter($__internal_971784cf6ca13be78e43a88caf33ac3703c9617bebb13fa89223903e71cd27d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "usuario/new.html.twig"));
+        $__internal_778e0728f8933b46d5def0df18a27d4d7f2ee2b45517aa0797fb68ca471d0b00 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_778e0728f8933b46d5def0df18a27d4d7f2ee2b45517aa0797fb68ca471d0b00->enter($__internal_778e0728f8933b46d5def0df18a27d4d7f2ee2b45517aa0797fb68ca471d0b00_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "usuario/new.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_8e1e1bbffbcc0e054d1198e406e310db91c50d6dc0254d3cdecf517bab2e9f60->leave($__internal_8e1e1bbffbcc0e054d1198e406e310db91c50d6dc0254d3cdecf517bab2e9f60_prof);
+        $__internal_47f02d9aa67222d422d6c57c37d59f1f8936866fed831ceee3418905ca230e2c->leave($__internal_47f02d9aa67222d422d6c57c37d59f1f8936866fed831ceee3418905ca230e2c_prof);
 
         
-        $__internal_971784cf6ca13be78e43a88caf33ac3703c9617bebb13fa89223903e71cd27d8->leave($__internal_971784cf6ca13be78e43a88caf33ac3703c9617bebb13fa89223903e71cd27d8_prof);
+        $__internal_778e0728f8933b46d5def0df18a27d4d7f2ee2b45517aa0797fb68ca471d0b00->leave($__internal_778e0728f8933b46d5def0df18a27d4d7f2ee2b45517aa0797fb68ca471d0b00_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_96530e681da95dcba41ac39c8923b66b0fefbc9d3884a896667239ec1d280bdb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_96530e681da95dcba41ac39c8923b66b0fefbc9d3884a896667239ec1d280bdb->enter($__internal_96530e681da95dcba41ac39c8923b66b0fefbc9d3884a896667239ec1d280bdb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_d5d90aee715bb4f242d7586c428a8370e7f2a21982ada4e8fc32f1b916d7568b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d5d90aee715bb4f242d7586c428a8370e7f2a21982ada4e8fc32f1b916d7568b->enter($__internal_d5d90aee715bb4f242d7586c428a8370e7f2a21982ada4e8fc32f1b916d7568b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_c371512c1225bddb1572615f1fdfbf53a34d8505e01376f20083b7beb799d05f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_c371512c1225bddb1572615f1fdfbf53a34d8505e01376f20083b7beb799d05f->enter($__internal_c371512c1225bddb1572615f1fdfbf53a34d8505e01376f20083b7beb799d05f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_79c0cfda6d4dd54a96501edf77decaed262201081bc85cf1eb1b59ecdd5c1677 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_79c0cfda6d4dd54a96501edf77decaed262201081bc85cf1eb1b59ecdd5c1677->enter($__internal_79c0cfda6d4dd54a96501edf77decaed262201081bc85cf1eb1b59ecdd5c1677_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "<h2 class=\"titulo-pagina\">Criar Usuário</h2>
@@ -59,11 +59,9 @@ class __TwigTemplate_55c5d206c095ff3f519f4206a91c8e4d7e89740ab4a823a6547498cf8f2
         // line 10
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nome", array()), 'label');
         echo "
-                    <span class=\"red\">* </span>
-                    <span class=\"glyphicon glyphicon-info-sign pull-right pointer\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"\" data-original-title=\"Data do cadastro, informado pelo sistema.\"></span>
                 </label>
                 ";
-        // line 14
+        // line 12
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nome", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
             </div>
@@ -72,14 +70,12 @@ class __TwigTemplate_55c5d206c095ff3f519f4206a91c8e4d7e89740ab4a823a6547498cf8f2
             <div class=\"form-group has-feedback\">
                 <label class=\"control-label col-xs-3 col-md-8\" for=\"usuario\">
                     ";
-        // line 20
+        // line 18
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "usuario", array()), 'label');
         echo "
-                    <span class=\"red\">* </span>
-                    <span class=\"glyphicon glyphicon-info-sign pull-right pointer\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"\" data-original-title=\"Automação a qual este lead será direcionado para receber emails.\"></span>
                 </label>
                 ";
-        // line 24
+        // line 20
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "usuario", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
             </div>
@@ -88,14 +84,12 @@ class __TwigTemplate_55c5d206c095ff3f519f4206a91c8e4d7e89740ab4a823a6547498cf8f2
             <div class=\"form-group has-feedback\">
                 <label class=\"control-label col-xs-3 col-md-8\" for=\"senha\">
                     ";
-        // line 30
+        // line 26
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "senha", array()), 'label');
         echo "
-                    <span class=\"red\">* </span>
-                    <span class=\"glyphicon glyphicon-info-sign pull-right pointer\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"\" data-original-title=\"Automação a qual este lead será direcionado para receber emails.\"></span>
                 </label>
                 ";
-        // line 34
+        // line 28
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "senha", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
             </div>
@@ -105,13 +99,13 @@ class __TwigTemplate_55c5d206c095ff3f519f4206a91c8e4d7e89740ab4a823a6547498cf8f2
     <div class=\"col-xs-12 col-md-9\">
         <input type=\"submit\" class=\"btn btn-primary pull-right\" value=\"Criar\" />
         ";
-        // line 41
+        // line 35
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
          <ul>
             <li>
                 <a href=\"";
-        // line 44
+        // line 38
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("usuario_index");
         echo "\">Voltar para a Lista</a>
             </li>
@@ -119,10 +113,10 @@ class __TwigTemplate_55c5d206c095ff3f519f4206a91c8e4d7e89740ab4a823a6547498cf8f2
     </div>
 ";
         
-        $__internal_c371512c1225bddb1572615f1fdfbf53a34d8505e01376f20083b7beb799d05f->leave($__internal_c371512c1225bddb1572615f1fdfbf53a34d8505e01376f20083b7beb799d05f_prof);
+        $__internal_79c0cfda6d4dd54a96501edf77decaed262201081bc85cf1eb1b59ecdd5c1677->leave($__internal_79c0cfda6d4dd54a96501edf77decaed262201081bc85cf1eb1b59ecdd5c1677_prof);
 
         
-        $__internal_96530e681da95dcba41ac39c8923b66b0fefbc9d3884a896667239ec1d280bdb->leave($__internal_96530e681da95dcba41ac39c8923b66b0fefbc9d3884a896667239ec1d280bdb_prof);
+        $__internal_d5d90aee715bb4f242d7586c428a8370e7f2a21982ada4e8fc32f1b916d7568b->leave($__internal_d5d90aee715bb4f242d7586c428a8370e7f2a21982ada4e8fc32f1b916d7568b_prof);
 
     }
 
@@ -138,7 +132,7 @@ class __TwigTemplate_55c5d206c095ff3f519f4206a91c8e4d7e89740ab4a823a6547498cf8f2
 
     public function getDebugInfo()
     {
-        return array (  115 => 44,  109 => 41,  99 => 34,  92 => 30,  83 => 24,  76 => 20,  67 => 14,  60 => 10,  52 => 5,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  109 => 38,  103 => 35,  93 => 28,  88 => 26,  79 => 20,  74 => 18,  65 => 12,  60 => 10,  52 => 5,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -161,8 +155,6 @@ class __TwigTemplate_55c5d206c095ff3f519f4206a91c8e4d7e89740ab4a823a6547498cf8f2
             <div class=\"form-group has-feedback\">
                 <label class=\"control-label col-xs-3 col-md-8\" for=\"nome\">
                     {{ form_label(form.nome) }}
-                    <span class=\"red\">* </span>
-                    <span class=\"glyphicon glyphicon-info-sign pull-right pointer\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"\" data-original-title=\"Data do cadastro, informado pelo sistema.\"></span>
                 </label>
                 {{ form_widget(form.nome, { 'attr': {'class': 'form-control'} }) }}
             </div>
@@ -171,8 +163,6 @@ class __TwigTemplate_55c5d206c095ff3f519f4206a91c8e4d7e89740ab4a823a6547498cf8f2
             <div class=\"form-group has-feedback\">
                 <label class=\"control-label col-xs-3 col-md-8\" for=\"usuario\">
                     {{ form_label(form.usuario) }}
-                    <span class=\"red\">* </span>
-                    <span class=\"glyphicon glyphicon-info-sign pull-right pointer\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"\" data-original-title=\"Automação a qual este lead será direcionado para receber emails.\"></span>
                 </label>
                 {{ form_widget(form.usuario, { 'attr': {'class': 'form-control'} }) }}
             </div>
@@ -181,8 +171,6 @@ class __TwigTemplate_55c5d206c095ff3f519f4206a91c8e4d7e89740ab4a823a6547498cf8f2
             <div class=\"form-group has-feedback\">
                 <label class=\"control-label col-xs-3 col-md-8\" for=\"senha\">
                     {{ form_label(form.senha) }}
-                    <span class=\"red\">* </span>
-                    <span class=\"glyphicon glyphicon-info-sign pull-right pointer\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"\" data-original-title=\"Automação a qual este lead será direcionado para receber emails.\"></span>
                 </label>
                 {{ form_widget(form.senha, { 'attr': {'class': 'form-control'} }) }}
             </div>

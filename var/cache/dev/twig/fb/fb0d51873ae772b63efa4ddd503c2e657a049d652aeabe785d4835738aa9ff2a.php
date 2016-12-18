@@ -21,125 +21,102 @@ class __TwigTemplate_825d9482dc520df5023ead661abda9c40ea2eef2367ca45b9b0b12be6a2
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_ae1abfcf712bb0c2b55f3944f27a9ea6e8afa247612661e8573f2892804112b4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ae1abfcf712bb0c2b55f3944f27a9ea6e8afa247612661e8573f2892804112b4->enter($__internal_ae1abfcf712bb0c2b55f3944f27a9ea6e8afa247612661e8573f2892804112b4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "usuario/new.login.html.twig"));
+        $__internal_dffc9b47d1497415d186325020e1d00e9a1aa584f6b0cca93d639ce4b9c047d7 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_dffc9b47d1497415d186325020e1d00e9a1aa584f6b0cca93d639ce4b9c047d7->enter($__internal_dffc9b47d1497415d186325020e1d00e9a1aa584f6b0cca93d639ce4b9c047d7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "usuario/new.login.html.twig"));
 
-        $__internal_11c386a7bc050e58759d69f5f2cb22744bc48c87e644b51f058de98452b75d8e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_11c386a7bc050e58759d69f5f2cb22744bc48c87e644b51f058de98452b75d8e->enter($__internal_11c386a7bc050e58759d69f5f2cb22744bc48c87e644b51f058de98452b75d8e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "usuario/new.login.html.twig"));
+        $__internal_642e482e64cf1e13c05eade74b9b363d5eb5e16da98acc87efbbae8e76c9c285 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_642e482e64cf1e13c05eade74b9b363d5eb5e16da98acc87efbbae8e76c9c285->enter($__internal_642e482e64cf1e13c05eade74b9b363d5eb5e16da98acc87efbbae8e76c9c285_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "usuario/new.login.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_ae1abfcf712bb0c2b55f3944f27a9ea6e8afa247612661e8573f2892804112b4->leave($__internal_ae1abfcf712bb0c2b55f3944f27a9ea6e8afa247612661e8573f2892804112b4_prof);
+        $__internal_dffc9b47d1497415d186325020e1d00e9a1aa584f6b0cca93d639ce4b9c047d7->leave($__internal_dffc9b47d1497415d186325020e1d00e9a1aa584f6b0cca93d639ce4b9c047d7_prof);
 
         
-        $__internal_11c386a7bc050e58759d69f5f2cb22744bc48c87e644b51f058de98452b75d8e->leave($__internal_11c386a7bc050e58759d69f5f2cb22744bc48c87e644b51f058de98452b75d8e_prof);
+        $__internal_642e482e64cf1e13c05eade74b9b363d5eb5e16da98acc87efbbae8e76c9c285->leave($__internal_642e482e64cf1e13c05eade74b9b363d5eb5e16da98acc87efbbae8e76c9c285_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_dde33d3f2c268719ff29a499ca4049afdfc81044066ef854e0ce4b0a89292789 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_dde33d3f2c268719ff29a499ca4049afdfc81044066ef854e0ce4b0a89292789->enter($__internal_dde33d3f2c268719ff29a499ca4049afdfc81044066ef854e0ce4b0a89292789_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_482358cd797587216116ec86c695f3b274fed1b3d39fea1f24c34ad6499b2899 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_482358cd797587216116ec86c695f3b274fed1b3d39fea1f24c34ad6499b2899->enter($__internal_482358cd797587216116ec86c695f3b274fed1b3d39fea1f24c34ad6499b2899_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_63594f1cdfa18d6ff52d121d1bb2015c51a0659023aa5d90ba7afc0f61773d32 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_63594f1cdfa18d6ff52d121d1bb2015c51a0659023aa5d90ba7afc0f61773d32->enter($__internal_63594f1cdfa18d6ff52d121d1bb2015c51a0659023aa5d90ba7afc0f61773d32_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_0964b35f348aad2ef417c5b47f277bd3babd2a71cad7b7fe2e1c35c359fe0c72 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_0964b35f348aad2ef417c5b47f277bd3babd2a71cad7b7fe2e1c35c359fe0c72->enter($__internal_0964b35f348aad2ef417c5b47f277bd3babd2a71cad7b7fe2e1c35c359fe0c72_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        echo "    <h1>Criar Usuário</h1>
-
-    ";
-        // line 6
+        echo "<h2 class=\"titulo-pagina\">Criar Usuário</h2>
+";
+        // line 5
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start');
         echo "
-    ";
-        // line 7
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'errors');
-        echo "
-
-    <div>
-        ";
+<div class=\"row margin15\">
+    <div class=\"col-xs-12 col-md-3\">
+        <div class=\"form-group has-feedback\">
+            <label class=\"control-label col-xs-3 col-md-8\" for=\"nome\">
+                ";
         // line 10
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "idUsuario", array()), 'label');
-        echo "
-        ";
-        // line 11
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "idUsuario", array()), 'errors');
-        echo "
-        ";
-        // line 12
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "idUsuario", array()), 'widget');
-        echo "
-    </div>
-
-    <div>
-        ";
-        // line 16
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nome", array()), 'label');
         echo "
-        ";
-        // line 17
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nome", array()), 'errors');
+            </label>
+            ";
+        // line 12
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nome", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
-        ";
-        // line 18
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nome", array()), 'widget');
-        echo "
+        </div>
     </div>
-
-    <div>
-        ";
-        // line 22
+    <div class=\"col-xs-12 col-md-3\">
+        <div class=\"form-group has-feedback\">
+            <label class=\"control-label col-xs-3 col-md-8\" for=\"usuario\">
+                ";
+        // line 18
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "usuario", array()), 'label');
         echo "
-        ";
-        // line 23
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "usuario", array()), 'errors');
+            </label>
+            ";
+        // line 20
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "usuario", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
-        ";
-        // line 24
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "usuario", array()), 'widget');
-        echo "
+        </div>
     </div>
-
-    <div>
-        ";
-        // line 28
+    <div class=\"col-xs-12 col-md-3\">
+        <div class=\"form-group has-feedback\">
+            <label class=\"control-label col-xs-3 col-md-8\" for=\"senha\">
+                ";
+        // line 26
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "senha", array()), 'label');
         echo "
-        ";
-        // line 29
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "senha", array()), 'errors');
+            </label>
+            ";
+        // line 28
+        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "senha", array()), 'widget', array("attr" => array("class" => "form-control")));
         echo "
+        </div>
+    </div>
+</div>
+<div class=\"row margin15\">
+    <div class=\"col-xs-12 col-md-9\">
+        <input type=\"submit\" class=\"btn btn-primary pull-right\" value=\"Criar\" />
         ";
-        // line 30
-        echo $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "senha", array()), 'widget');
-        echo "
-    </div>
-
-    <div>
-        <input type=\"submit\" value=\"Criar\" />
-    </div>
-
-    ";
-        // line 37
+        // line 35
         echo         $this->env->getRuntime('Symfony\Bridge\Twig\Form\TwigRenderer')->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
-
-    <ul>
-        <li>
-            <a href=\"";
-        // line 41
+        <ul>
+            <li>
+                <a href=\"";
+        // line 38
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("login_index");
         echo "\">Voltar para o login</a>
-        </li>
-    </ul>
+            </li>
+        </ul>
+    </div>
 ";
         
-        $__internal_63594f1cdfa18d6ff52d121d1bb2015c51a0659023aa5d90ba7afc0f61773d32->leave($__internal_63594f1cdfa18d6ff52d121d1bb2015c51a0659023aa5d90ba7afc0f61773d32_prof);
+        $__internal_0964b35f348aad2ef417c5b47f277bd3babd2a71cad7b7fe2e1c35c359fe0c72->leave($__internal_0964b35f348aad2ef417c5b47f277bd3babd2a71cad7b7fe2e1c35c359fe0c72_prof);
 
         
-        $__internal_dde33d3f2c268719ff29a499ca4049afdfc81044066ef854e0ce4b0a89292789->leave($__internal_dde33d3f2c268719ff29a499ca4049afdfc81044066ef854e0ce4b0a89292789_prof);
+        $__internal_482358cd797587216116ec86c695f3b274fed1b3d39fea1f24c34ad6499b2899->leave($__internal_482358cd797587216116ec86c695f3b274fed1b3d39fea1f24c34ad6499b2899_prof);
 
     }
 
@@ -155,7 +132,7 @@ class __TwigTemplate_825d9482dc520df5023ead661abda9c40ea2eef2367ca45b9b0b12be6a2
 
     public function getDebugInfo()
     {
-        return array (  133 => 41,  126 => 37,  116 => 30,  112 => 29,  108 => 28,  101 => 24,  97 => 23,  93 => 22,  86 => 18,  82 => 17,  78 => 16,  71 => 12,  67 => 11,  63 => 10,  57 => 7,  53 => 6,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  109 => 38,  103 => 35,  93 => 28,  88 => 26,  79 => 20,  74 => 18,  65 => 12,  60 => 10,  52 => 5,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -171,46 +148,44 @@ class __TwigTemplate_825d9482dc520df5023ead661abda9c40ea2eef2367ca45b9b0b12be6a2
         return new Twig_Source("{% extends 'base.login.html.twig' %}
 
 {% block body %}
-    <h1>Criar Usuário</h1>
-
-    {{ form_start(form) }}
-    {{ form_errors(form) }}
-
-    <div>
-        {{ form_label(form.idUsuario) }}
-        {{ form_errors(form.idUsuario) }}
-        {{ form_widget(form.idUsuario) }}
+<h2 class=\"titulo-pagina\">Criar Usuário</h2>
+{{ form_start(form) }}
+<div class=\"row margin15\">
+    <div class=\"col-xs-12 col-md-3\">
+        <div class=\"form-group has-feedback\">
+            <label class=\"control-label col-xs-3 col-md-8\" for=\"nome\">
+                {{ form_label(form.nome) }}
+            </label>
+            {{ form_widget(form.nome, { 'attr': {'class': 'form-control'} }) }}
+        </div>
     </div>
-
-    <div>
-        {{ form_label(form.nome) }}
-        {{ form_errors(form.nome) }}
-        {{ form_widget(form.nome) }}
+    <div class=\"col-xs-12 col-md-3\">
+        <div class=\"form-group has-feedback\">
+            <label class=\"control-label col-xs-3 col-md-8\" for=\"usuario\">
+                {{ form_label(form.usuario) }}
+            </label>
+            {{ form_widget(form.usuario, { 'attr': {'class': 'form-control'} }) }}
+        </div>
     </div>
-
-    <div>
-        {{ form_label(form.usuario) }}
-        {{ form_errors(form.usuario) }}
-        {{ form_widget(form.usuario) }}
+    <div class=\"col-xs-12 col-md-3\">
+        <div class=\"form-group has-feedback\">
+            <label class=\"control-label col-xs-3 col-md-8\" for=\"senha\">
+                {{ form_label(form.senha) }}
+            </label>
+            {{ form_widget(form.senha, { 'attr': {'class': 'form-control'} }) }}
+        </div>
     </div>
-
-    <div>
-        {{ form_label(form.senha) }}
-        {{ form_errors(form.senha) }}
-        {{ form_widget(form.senha) }}
+</div>
+<div class=\"row margin15\">
+    <div class=\"col-xs-12 col-md-9\">
+        <input type=\"submit\" class=\"btn btn-primary pull-right\" value=\"Criar\" />
+        {{ form_end(form) }}
+        <ul>
+            <li>
+                <a href=\"{{ path('login_index') }}\">Voltar para o login</a>
+            </li>
+        </ul>
     </div>
-
-    <div>
-        <input type=\"submit\" value=\"Criar\" />
-    </div>
-
-    {{ form_end(form) }}
-
-    <ul>
-        <li>
-            <a href=\"{{ path('login_index') }}\">Voltar para o login</a>
-        </li>
-    </ul>
 {% endblock %}
 ", "usuario/new.login.html.twig", "C:\\xampp\\htdocs\\Teste_Ditech\\sistema_reserva_salas\\reserva_salas\\app\\Resources\\views\\usuario\\new.login.html.twig");
     }

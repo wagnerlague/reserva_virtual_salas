@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * Login controller.
  *
- * @Route("login")
+ * @Route("/login")
  */
 class LoginController extends Controller
 {

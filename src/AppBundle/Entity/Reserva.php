@@ -9,6 +9,7 @@
 namespace AppBundle\Entity;
 
 use AppBundle\Repository\SalaRepository;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -31,21 +32,19 @@ class Reserva
      */
     private $data_hora;
 
-
     /**
-     * @var Usuario
-     *
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Usuario")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Usuario", inversedBy="reservas")
      * @ORM\JoinColumn(name="id_usuario", referencedColumnName="id_usuario")
-     *
+     * @ORM\Column(name="id_usuario", type="integer")
+     * @var usuario
      */
     private $usuario;
 
     /**
-     * @var Sala
-     *
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Sala")
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Sala", inversedBy="reservas")
      * @ORM\JoinColumn(name="id_sala", referencedColumnName="id_sala")
+     * @ORM\Column(name="id_sala", type="integer")
+     * @var sala
      */
     private $sala;
 
@@ -60,6 +59,22 @@ class Reserva
      *
      */
     private $status;
+
+    /**
+     * Reserva constructor.
+     * @param $data_hora
+     * @param usuario $usuario
+     * @param sala $sala
+     * @param $hora
+     * @param $status
+     */
+    public function __construct(usuario $usuario, sala $sala)
+    {
+        $this->usuario = $usuario;
+        $usuario->addReserva($this);
+        $this->sala = $sala;
+        $sala->addReserva($this);
+    }
 
     /**
      * @return mixed
@@ -93,37 +108,6 @@ class Reserva
         $this->data_hora = $data_hora;
     }
 
-    /**
-     * @return Usuario
-     */
-    public function getUsuario()
-    {
-        return $this->usuario;
-    }
-
-    /**
-     * @param Usuario $usuario
-     */
-    public function setUsuario($usuario)
-    {
-        $this->usuario = $usuario;
-    }
-
-    /**
-     * @return Sala
-     */
-    public function getSala()
-    {
-        return $this->sala;
-    }
-
-    /**
-     * @param Sala $sala
-     */
-    public function setSala($sala)
-    {
-        $this->sala = $sala;
-    }
     /**
      * @return mixed
      */
