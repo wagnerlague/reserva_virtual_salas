@@ -325,6 +325,21 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'AppBundle\\Controller\\homeController::carregarHome',  '_route' => 'app_home_carregarhome',);
         }
 
+        // index
+        if (rtrim($pathinfo, '/') === '') {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_index;
+            }
+
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'index');
+            }
+
+            return array (  '_controller' => 'AppBundle\\Controller\\indexController::indexAction',  '_route' => 'index',);
+        }
+        not_index:
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

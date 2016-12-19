@@ -22,11 +22,14 @@ class homeController extends Controller
      */
     public function carregarHome()
     {
-        #$usuario = $this->get('session')->get('usuario');
+
+
+        $usuariologado = $this->get('session')->get('usuario');
         $em = $this->getDoctrine()->getManager();
-        $reservas = $em->getRepository('AppBundle:Reserva')->findAll();
+        $criteria = array('status' => 'A');
+        $reservas = $em->getRepository('AppBundle:Reserva')->findBy($criteria);
         #dump($reservas);die();
-        return $this->render('home/home.html.twig',array('reservas'=>$reservas));
+        return $this->render('home/home.html.twig',array('reservas'=>$reservas,'usuarios'=>$usuariologado));
     }
 
 }

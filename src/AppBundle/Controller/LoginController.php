@@ -38,7 +38,8 @@ class LoginController extends Controller
             $user = $repository->findOneBy(array('usuario'=>$usuario,'senha'=>$senha));
 
             if($user){
-                #$session = $this->get('session')->set('usuario', $user);
+                $session = new Session();
+                $session->set('usuario', $user);
                 return $this->redirectToRoute('app_home_carregarhome');
             }
         }
